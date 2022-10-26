@@ -35,14 +35,17 @@ const renderCep = async (cep) =>{
 
       endereço.style.background = '#fff';
       endereço.value = data.logradouro;  
-    }else{
-      alert('Cep invalido');
-      return
     }
   
 }
 
 button.addEventListener('click', ()=>{
-  let cep = document.querySelector('.cep');
-  renderCep(cep.value)
+  let cep = document.querySelector('.cep').value;
+
+  if(cep.length !== 8){
+    alert('Cep inválido')
+  }
+
+  renderCep(cep)
+  
 })

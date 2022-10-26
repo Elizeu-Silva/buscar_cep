@@ -35,6 +35,9 @@ const renderCep = async (cep) =>{
 
       endereço.style.background = '#fff';
       endereço.value = data.logradouro;  
+    }else{
+      alert('Cep invalido');
+      return
     }
   
 }

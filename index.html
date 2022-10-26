@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Buscador de Cep</title>
+  </head>
+  <body>
+
+    <main class="buscador">
+      <form>
+        <div class="flex">
+          <label>
+            <span>Cep</span> 
+            <input type="search" class="cep"
+             required
+              placeholder="Insira o Cep"
+              maxlength="9"
+               >
+          </label>
+          <label>
+            <span>Estado</span>           
+            <input type="text" class="estado" disabled>
+          </label>
+          <label>
+            <span>Cidade</span> 
+            <input type="text" class="cidade" disabled>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <span>Bairro</span> 
+            <input type="text" class="bairro" disabled>
+          </label>
+          <label>
+            <span>Endereço</span> 
+            <input type="text" class="endereço" disabled>
+          </label>
+        </div>
+        
+        <div class="button-container">
+          
+          <button class="btn">Buscar</button>
+        </div>
+      </form>
+      
+    </main>
+    <script type='module' src="/src/script/main.js"></script>
+  </body>
+</html>

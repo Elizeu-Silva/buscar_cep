@@ -11,7 +11,7 @@ form.addEventListener('submit', (event)=>{
 })
 
 const buscarCep = async (cep) =>{
-  const APIcep = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+  const APIcep = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
   
  if(APIcep.status === 200){
     const data = await APIcep.json()
